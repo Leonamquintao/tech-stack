@@ -1,5 +1,7 @@
 ## Project with the purpose of studying the RN and Redux.
 
+Run command: `npm install --save redux react-redux`;
+
 > Reducer are allways call with 2 arguments, the curent state and the action:
 
 ```
@@ -33,4 +35,4 @@ const acrion2 = {
 store.dispach(action); // {"type: "split_string", "payload": "asdf"}
 
 store.getState(); // shows ["a","s","d","f"]
-```
+`>`
