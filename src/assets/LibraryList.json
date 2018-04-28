@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "description": "O nome HTML é uma abreviação para a expressão inglesa de HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto. A tecnologia é fruto da junção entre os padrões HyTime e SGML, que não são mais utilizados."
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "description": "Cascading Style Sheets (CSS) é um simples mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web. Em vez de colocar a formatação dentro do documento, o CSS cria um link para uma página que contém os estilos."
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "description": "A primeira coisa que você precisa saber: JavaScript não tem nada a ver com Java. Java é uma linguagem server-side, como PHP, Ruby, Python e tantas outras. A única coisa parecida entre eles é o nome. ;-)"
+  },
+  {
+    "id": 4,
+    "title": "Angular",
+    "description": "AngularJS é um framework JavaScript código aberto, mantido pelo Google, que auxilia na execução de single-page applications."
+  },
+  {
+    "id": 5,
+    "title": "React-Native",
+    "description": "O React (às vezes denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook, Instagram e uma comunidade de desenvolvedores individuais e outras empresas. De acordo com o serviço de análise de JavaScript Libscore, o React está sendo usado nos sites da Netflix, Imgur, Relatório do Bleaucher, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros."
+  },
+  {
+    "id": 6,
+    "title": "Java",
+    "description": "Java é uma linguagem de programação interpretada orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems."
+  },
+  {
+    "id": 7,
+    "title": "SQL",
+    "description": "Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional."
+  },
+  {
+    "id": 8,
+    "title": "MongoDB",
+    "description": "MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas."
+  },
+  {
+    "id": 9,
+    "title": "GIT",
+    "description": "Git é um sistema de controle de versão distribuído e um sistema de gerenciamento de código fonte, com ênfase em velocidade."
+  },
+]
