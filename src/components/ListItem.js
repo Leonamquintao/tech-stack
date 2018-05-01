@@ -10,6 +10,16 @@ import Card from './common/Card';
 import CardSection from './common/CardSection';
 
 class ListItem extends Component <{}> {
+
+  renderDescription() {
+
+    if(this.props.item.id === this.props.selectedLibraryId) {
+      return (
+        <Text>{ this.props.item.description }</Text>
+      );
+    }
+  }
+
   render () {
 
     const { titleStyle } = styles;
@@ -20,17 +30,21 @@ class ListItem extends Component <{}> {
         <View>
           <CardSection>
             <Text style={titleStyle}>{title}</Text>
-            <Text>{description}</Text>
           </CardSection>
+          { this.renderDescription() }
         </View>
       </TouchableWithoutFeedback>
     );
   }
-}
+};
+
+const mapStateToProps = state => {
+  return { selectedLibraryId: state.selectedLibraryId };
+};
 
 //the first argument of connect should be 'mapStateToProps', but since we are
 //not using it, the 'null' must be passed instead of it.
-export default connect(null, actions)(ListItem);
+export default connect(mapStateToProps, actions)(ListItem);
 
 const styles = StyleSheet.create({
   titleStyle: {
