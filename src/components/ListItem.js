@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
+import { connect } from 'react-redux';
 
+//actions
+import * as actions from '../actions';
+
+//components
 import Card from './common/Card';
 import CardSection from './common/CardSection';
 
-
-export default class ListItem extends Component <{}> {
+class ListItem extends Component <{}> {
   render () {
-    //destruction styles
+
     const { titleStyle } = styles;
+    const { id, title, description } = this.props.item;
 
     return (
-      <CardSection>
-        <Text style={titleStyle}>{this.props.item.title}</Text>
-        <Text>{this.props.item.description}</Text>
-      </CardSection>
+      <TouchableWithoutFeedback onPress={() => this.props.selectLibrary(id)}>
+        <View>
+          <CardSection>
+            <Text style={titleStyle}>{title}</Text>
+            <Text>{description}</Text>
+          </CardSection>
+        </View>
+      </TouchableWithoutFeedback>
     );
   }
-
 }
+
+//the first argument of connect should be 'mapStateToProps', but since we are
+//not using it, the 'null' must be passed instead of it.
+export default connect(null, actions)(ListItem);
 
 const styles = StyleSheet.create({
   titleStyle: {
